@@ -1,0 +1,9 @@
+22:46:11.031 [main] INFO  utils.Hooks - ------------------------------
+22:46:11.034 [main] INFO  utils.Hooks - Starting - Login as a authenticated user and validate search result
+22:46:11.034 [main] INFO  utils.Hooks - ------------------------------
+22:46:13.443 [main] INFO  seleniumgluecode.SeleniumTest - Login Successfully
+22:46:14.220 [main] INFO  seleniumgluecode.SeleniumTest - Clicked on Hilversum
+22:46:21.861 [main] INFO  seleniumgluecode.SeleniumTest - click successfull
+22:46:21.861 [main] INFO  utils.Hooks - ------------------------------
+22:46:21.861 [main] INFO  utils.Hooks - Login as a authenticated user and validate search result Status - passed
+22:46:21.862 [main] INFO  utils.Hooks - ------------------------------
