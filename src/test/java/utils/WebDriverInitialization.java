@@ -16,7 +16,9 @@ import configurations.TestEnums;
 
 /**
  * 
- * @author AnujTeotia
+ * This class initialises the selenium webdriver.
+ * 
+ * @author anujteotia
  *
  */
 
@@ -25,21 +27,22 @@ public class WebDriverInitialization {
 	private static ChromeOptions options = null;
 	private static DesiredCapabilities dc = null;
 	public final static Logger logger = LogManager.getLogger(PropUtilities.class);
-	
-	private WebDriverInitialization() {
-    }
 
 	/**
-	 * initateDriver
+	 * default constructor
+	 */
+	private WebDriverInitialization() {
+	}
+
+	/**
+	 * This function initiates web driver according to the browser name provided.
 	 * 
-	 * @Description Initialising the web driver.
-	 * @param browserName name of the browser.
+	 * @param browserName name of the web browser to be opened.
 	 * @return web driver.
 	 */
 	private static WebDriver initiateDriver(String browserName) {
 		try {
-			if (browserName != null
-					&& TestEnums.CHROME.getValue().equalsIgnoreCase(browserName)) {
+			if (browserName != null && TestEnums.CHROME.getValue().equalsIgnoreCase(browserName)) {
 				if (driver == null) {
 					options = new ChromeOptions();
 					options.setExperimentalOption("excludeSwitches", new String[] { "enable-automation" });
@@ -51,19 +54,17 @@ public class WebDriverInitialization {
 					driver.manage().window().maximize();
 					driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 				}
-			}
-			else if(browserName != null
-					&& TestEnums.FIREFOX.getValue().equalsIgnoreCase(browserName)) {
+			} else if (browserName != null && TestEnums.FIREFOX.getValue().equalsIgnoreCase(browserName)) {
 				if (driver == null) {
 					dc = DesiredCapabilities.firefox();
-				    dc.setCapability("marionette", true);
-				    driver = new FirefoxDriver();
-				    driver.manage().window().maximize();
+					dc.setCapability("marionette", true);
+					driver = new FirefoxDriver();
+					driver.manage().window().maximize();
 					driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 				}
-				
+
 			}
-			
+
 			return driver;
 		} catch (Exception e) {
 			logger.info(e.getStackTrace());
@@ -72,15 +73,23 @@ public class WebDriverInitialization {
 
 	}
 
-    public static WebDriver getDriver(String browserName) {
-    	if(driver!=null) {
-    		return driver;
-    	}
-        return initiateDriver(browserName);
-    }
+	/**
+	 * 
+	 * @param browserName name of the browser to be returned or initiated.
+	 * @return web driver
+	 */
+	public static WebDriver getDriver(String browserName) {
+		if (driver != null) {
+			return driver;
+		}
+		return initiateDriver(browserName);
+	}
 
-    public static void destroyDriver() {
-        driver.quit();
-        driver = null;
-    }
+	/**
+	 * This function quits the web driver.
+	 */
+	public static void destroyDriver() {
+		driver.quit();
+		driver = null;
+	}
 }

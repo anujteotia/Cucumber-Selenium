@@ -1,6 +1,6 @@
 @LoginAndSearchFeature
 Feature: Login And Search Feature
-  Verify if user is able to Login in to the site
+  Verify if user is able to Login in to the site and then able to search
 
 	@scenarioTag
 	Scenario: Login as a authenticated user and validate search result

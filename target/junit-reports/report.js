@@ -2,7 +2,7 @@ $(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.
 formatter.feature({
   "line": 2,
   "name": "Login And Search Feature",
-  "description": "Verify if user is able to Login in to the site",
+  "description": "Verify if user is able to Login in to the site and then able to search",
   "id": "login-and-search-feature",
   "keyword": "Feature",
   "tags": [
@@ -13,7 +13,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 5297736833,
+  "duration": 2697385986,
   "status": "passed"
 });
 formatter.scenario({
@@ -74,64 +74,64 @@ formatter.match({
   "location": "SeleniumTest.goToAnimana()"
 });
 formatter.result({
-  "duration": 804844725,
+  "duration": 1002608533,
   "status": "passed"
 });
 formatter.match({
   "location": "SeleniumTest.user_enters_username_and_Password()"
 });
 formatter.result({
-  "duration": 281924749,
+  "duration": 993487812,
   "status": "passed"
 });
 formatter.match({
   "location": "SeleniumTest.login_is_successfull()"
 });
 formatter.result({
-  "duration": 1588961524,
+  "duration": 638780074,
   "status": "passed"
 });
 formatter.match({
   "location": "SeleniumTest.select_location()"
 });
 formatter.result({
-  "duration": 985679589,
+  "duration": 1986943181,
   "status": "passed"
 });
 formatter.match({
   "location": "SeleniumTest.validate_new_contact_icon()"
 });
 formatter.result({
-  "duration": 332523076,
+  "duration": 124927191,
   "status": "passed"
 });
 formatter.match({
   "location": "SeleniumTest.select_patient_from_dropdown()"
 });
 formatter.result({
-  "duration": 3947958370,
+  "duration": 3569128652,
   "status": "passed"
 });
 formatter.match({
   "location": "SeleniumTest.search_for_a_term()"
 });
 formatter.result({
-  "duration": 426092187,
+  "duration": 276572336,
   "status": "passed"
 });
 formatter.match({
   "location": "SeleniumTest.assert_search_term()"
 });
 formatter.result({
-  "duration": 3094716014,
+  "duration": 3368248548,
   "status": "passed"
 });
 formatter.after({
-  "duration": 556367,
+  "duration": 564087,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1923224901,
+  "duration": 178053659,
   "status": "passed"
 });
 });
