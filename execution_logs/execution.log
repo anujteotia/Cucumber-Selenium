@@ -1,9 +1,16 @@
-11:46:03.904 [main] INFO  utils.Hooks - ------------------------------
-11:46:03.909 [main] INFO  utils.Hooks - Starting - Login as a authenticated user and validate search result
-11:46:03.910 [main] INFO  utils.Hooks - ------------------------------
-11:46:06.650 [main] INFO  seleniumgluecode.SeleniumTest - Login Successfully
-11:46:08.640 [main] INFO  seleniumgluecode.SeleniumTest - Clicked on Hilversum
-11:46:15.993 [main] INFO  seleniumgluecode.SeleniumTest - click successfull
-11:46:15.996 [main] INFO  utils.Hooks - ------------------------------
-11:46:15.996 [main] INFO  utils.Hooks - Login as a authenticated user and validate search result Status - passed
-11:46:15.997 [main] INFO  utils.Hooks - ------------------------------
+17:17:10.702 [main] INFO  utils.CreateFolder - screenshots already Exist!!
+17:17:10.710 [main] INFO  utils.Hooks - ------------------------------
+17:17:10.710 [main] INFO  utils.Hooks - Starting - Login as a authenticated user and validate search result
+17:17:10.710 [main] INFO  utils.Hooks - ------------------------------
+17:17:11.800 [main] INFO  seleniumgluecode.SeleniumTest - Entered Username successfully
+17:17:11.932 [main] INFO  seleniumgluecode.SeleniumTest - Entered password successfully
+17:17:13.123 [main] INFO  seleniumgluecode.SeleniumTest - Login is Successful
+17:17:14.523 [main] INFO  seleniumgluecode.SeleniumTest - Clicked on Hilversum
+17:17:14.646 [main] INFO  seleniumgluecode.SeleniumTest - Switched to frame containg element: [[ChromeDriver: chrome on MAC (ce4a1ed414030e9296251d1e4ed3452a)] -> xpath: //div[@id='manaDiv']/iframe]
+17:17:15.057 [main] INFO  seleniumgluecode.SeleniumTest - new contact icon is present
+17:17:18.452 [main] INFO  seleniumgluecode.SeleniumTest - Selected Patient from search dropdown
+17:17:18.748 [main] INFO  seleniumgluecode.SeleniumTest - Performed search for Diensthond
+17:17:19.017 [main] INFO  seleniumgluecode.SeleniumTest - Search successfull as the element is present in the search results
+17:17:22.029 [main] INFO  utils.Hooks - ------------------------------
+17:17:22.030 [main] INFO  utils.Hooks - Login as a authenticated user and validate search result Status - passed
+17:17:22.030 [main] INFO  utils.Hooks - ------------------------------

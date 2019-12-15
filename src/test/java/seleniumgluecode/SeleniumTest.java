@@ -26,6 +26,7 @@ import utils.Hooks;
 public class SeleniumTest {
 	private static WebDriver driver = Hooks.driver;
 	public final static Logger logger = LogManager.getLogger(SeleniumTest.class);
+	
 
 	/**
 	 * This function open the animana web ui
@@ -45,8 +46,10 @@ public class SeleniumTest {
 	public void user_enters_username_and_Password() throws Throwable {
 		driver.findElement(By.id("username")).clear();
 		driver.findElement(By.id("username")).sendKeys("testnl40");
+		logger.info("Entered Username successfully");
 		driver.findElement(By.id("password")).clear();
 		driver.findElement(By.id("password")).sendKeys("Test#12345");
+		logger.info("Entered password successfully");
 		driver.findElement(By.id("logon-login-button")).click();
 	}
 
@@ -61,7 +64,7 @@ public class SeleniumTest {
 		String actual_string = driver.findElement(By.xpath("//div[contains(text(),'choose location')]")).getText()
 				.toLowerCase();
 		Assert.assertEquals(actual_string, "choose location");
-		logger.info("Login Successfully");
+		logger.info("Login is Successful");
 	}
 
 	/**
@@ -85,8 +88,10 @@ public class SeleniumTest {
 	public void validate_new_contact_icon() throws Throwable {
 		WebElement element = driver.findElement(By.xpath("//div[@id='manaDiv']/iframe"));
 		driver.switchTo().frame(element);
+		logger.info("Switched to frame containg element: "+ element);
 		boolean is_present = driver.findElement(By.xpath("//a[@id='topMenuBar-addNewClient-button']")).isDisplayed();
 		Assert.assertTrue("new contact icon is not present on the page", is_present);
+		logger.info("new contact icon is present");
 	}
 
 	/**
@@ -99,6 +104,7 @@ public class SeleniumTest {
 		driver.findElement(By.xpath("//button[@id='topMenuBar-searchDropdown-button']")).click();
 		driver.findElement(By.xpath("//li/a[@beanname='patient']")).click();
 		TimeUnit.SECONDS.sleep(3);
+		logger.info("Selected Patient from search dropdown");
 	}
 
 	/**
@@ -110,6 +116,7 @@ public class SeleniumTest {
 	public void search_for_a_term() throws Throwable {
 		driver.findElement(By.xpath("//input[@name='searchkey']")).sendKeys("Diensthond");
 		driver.findElement(By.xpath("//button[@id='mainSearchButton' and @beanname='patient']")).click();
+		logger.info("Performed search for Diensthond");
 	}
 
 	/**
@@ -122,8 +129,8 @@ public class SeleniumTest {
 	public void assert_search_term() throws Throwable {
 		boolean is_dien = driver.findElement(By.xpath("//td[contains(text(),'Diensthond')]")).isDisplayed();
 		Assert.assertTrue(" Diensthond is not present in the page", is_dien);
+		logger.info("Search successfull as the element is present in the search results");
 		TimeUnit.SECONDS.sleep(3);
 		driver.switchTo().defaultContent();
-		logger.info("click successfull");
 	}
 }

@@ -13,7 +13,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 2697385986,
+  "duration": 2817435509,
   "status": "passed"
 });
 formatter.scenario({
@@ -74,64 +74,64 @@ formatter.match({
   "location": "SeleniumTest.goToAnimana()"
 });
 formatter.result({
-  "duration": 1002608533,
+  "duration": 802758202,
   "status": "passed"
 });
 formatter.match({
   "location": "SeleniumTest.user_enters_username_and_Password()"
 });
 formatter.result({
-  "duration": 993487812,
+  "duration": 470371577,
   "status": "passed"
 });
 formatter.match({
   "location": "SeleniumTest.login_is_successfull()"
 });
 formatter.result({
-  "duration": 638780074,
+  "duration": 1037090666,
   "status": "passed"
 });
 formatter.match({
   "location": "SeleniumTest.select_location()"
 });
 formatter.result({
-  "duration": 1986943181,
+  "duration": 1397433668,
   "status": "passed"
 });
 formatter.match({
   "location": "SeleniumTest.validate_new_contact_icon()"
 });
 formatter.result({
-  "duration": 124927191,
+  "duration": 530639251,
   "status": "passed"
 });
 formatter.match({
   "location": "SeleniumTest.select_patient_from_dropdown()"
 });
 formatter.result({
-  "duration": 3569128652,
+  "duration": 3393380542,
   "status": "passed"
 });
 formatter.match({
   "location": "SeleniumTest.search_for_a_term()"
 });
 formatter.result({
-  "duration": 276572336,
+  "duration": 290772961,
   "status": "passed"
 });
 formatter.match({
   "location": "SeleniumTest.assert_search_term()"
 });
 formatter.result({
-  "duration": 3368248548,
+  "duration": 3277507370,
   "status": "passed"
 });
 formatter.after({
-  "duration": 564087,
+  "duration": 578392,
   "status": "passed"
 });
 formatter.after({
-  "duration": 178053659,
+  "duration": 216020089,
   "status": "passed"
 });
 });

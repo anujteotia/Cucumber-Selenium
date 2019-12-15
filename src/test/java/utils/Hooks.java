@@ -41,6 +41,7 @@ public class Hooks {
 	 */
 	@Before(order = 0)
 	public void before(Scenario scenario) {
+		CreateFolder.makeFolder("screenshots");
 		logger.info("------------------------------");
 		logger.info("Starting - " + scenario.getName());
 		logger.info("------------------------------");
@@ -72,7 +73,7 @@ public class Hooks {
 			if (scenario.isFailed()) {
 				String screenshotName = scenario.getName().replaceAll(" ", "_");
 				File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-				File destinationPath = new File(System.getProperty("user.dir") + "/target/cucumber-reports/screenshots/"
+				File destinationPath = new File(System.getProperty("user.dir") + "/screenshots/"
 						+ screenshotName + ".png");
 				Files.copy(screenshot, destinationPath);
 				Reporter.addScreenCaptureFromPath(destinationPath.toString());
