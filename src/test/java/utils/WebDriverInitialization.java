@@ -29,9 +29,9 @@ public class WebDriverInitialization {
 	private static ChromeOptions chromeOptions = null;
 	private static FirefoxOptions firefoxOptions = null;
 	public final static Logger logger = LogManager.getLogger(PropUtilities.class);
-	public static final String USERNAME = "USERNAME";
-	public static final String ACCESS_KEY = "ACCESS_KEY";
-	public static final String URL = "https://" + USERNAME + ":" + ACCESS_KEY
+	private static final String USERNAME = "USERNAME";
+	private static final String ACCESS_KEY = "ACCESS_KEY";
+	private static final String URL = "https://" + USERNAME + ":" + ACCESS_KEY
 			+ "@ondemand.eu-central-1.saucelabs.com:443/wd/hub";
 
 	/**
